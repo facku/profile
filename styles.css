@@ -1,0 +1,54 @@
+#myVideo {
+  min-width: 100vh;
+  min-height: 100vw;
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  z-index: -100;
+
+  background-size: cover;
+}
+
+.content {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f1f1f1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: video-change 14s linear infinite;
+}
+
+@keyframes video-change {
+  to {
+    background: rgba(0, 0, 0, 1);
+    background-blend-mode: exclusion;
+  }
+}
+
+section {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid red;
+  box-shadow: 0 0px 50px red;
+  filter: drop-shadow(0 0 10px red);
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
